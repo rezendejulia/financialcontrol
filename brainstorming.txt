@@ -1,0 +1,76 @@
+- contas - o usuario pode especificar suas contas
+
+- meios de gastos 
+
+- área para adicionar cartões - opções gerais dos cartões
+
+
+- menu inicial: 
+    . exit
+    . login
+    . register -> menu register:
+                        . username
+                        . password
+                        . repeat password
+                        . cancel
+                        . make your register / OK
+
+
+- menu geral:
+    . contas
+    . dashboard
+    . cartões
+    . exportações
+
+
+- menu dashboard:
+    . dashboard -> info gastos (cartoes, dinheiro..., começo mes - dia do visu)
+                -> info ganhos (dinheiro, pix..., começo mes - dia do visu)
+                -> info total saldo (saldo geral para gastos)
+                -> info total gastos (saldo geral de contas a pagar)
+                -> personal configs info
+    . return
+
+
+
+- DATAS:
+    . json -> informations gerais
+    * struct:
+{
+    "data": [
+        {
+            "users": [
+                {
+                    "id":  0,
+                    "email_username": "string",
+                    "password": "string",
+                    "date_created": "date_time", 
+                    "active": "boolean"
+                }
+            ]
+        },
+        {
+            "cards": [
+                {
+                    "id": 0,
+                    "bank": "nuBank",
+                    "alive_money": "float",
+                    "positive_balance": "float",
+                    "negative_balance": "float",
+                    "total_balance": "float",
+                    "card_type": "C. Crédito/C. Débito",
+                    "due_date": "date_time",
+                    "date_created": "date_time"
+                }
+            ]
+        },
+        {
+            "bills": [
+                {
+                    "id": 0,
+                    
+                }
+            ]
+        }
+    ]
+}
